@@ -1,23 +1,4 @@
-/* const express = require('express');
-const app = express();
-
-app.listen(3000,() => {
-    console.log('Server on');
-})
-
-app.get('/', function(req, res){
-    res.send('Welcome to the site');
-})
-
-app.get('/contact', function(req, res){
-    res.send('Welcome to the contacts section');
-})
-
-const path = require('path');
-
-app.get('/contact', function(req, res){
-    res.sendFile(path.join(__dirname, '/index.html'))
-}) */
+app.set('view engine', 'ejs');
 
 const express = require('express');
 const app = express();
